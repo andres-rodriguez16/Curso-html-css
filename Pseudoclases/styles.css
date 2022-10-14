@@ -1,0 +1,25 @@
+.main-nav {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+    background-color: #13a4a4;
+}
+
+.main-nav__iteam{
+    display: inline-block;
+}
+.main-nav__iteam a{
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.main-nav__iteam a:hover{
+    color: crimson;
+}
+.main-nav__iteam a:active{
+    color: blue;
+}
+.main-nav__iteam a::after{
+    content: "  | ";
+}
