@@ -1,25 +1,37 @@
 .main-nav {
-    margin-top: 20px;
     list-style: none;
-    padding-left: 0;
-    background-color: #13a4a4;
+    background-color: blue;
+    padding: 10px;
+    margin: 20px 0;
 }
 
-.main-nav__iteam{
-    display: inline-block;
-}
-.main-nav__iteam a{
-    color: white;
-    padding: 5px;
-    border-radius: 2px;
+.main-nav a {
     text-decoration: none;
+    color: white;
+    padding: 10px;
 }
-.main-nav__iteam a:hover{
-    color: crimson;
+
+.main-nav li {
+    display: inline-block;
+    height: 100%;
 }
-.main-nav__iteam a:active{
-    color: blue;
+
+.main-nav a:hover {
+    background: blueviolet;
+    border-radius: 2px;
 }
-.main-nav__iteam a::after{
-    content: "  | ";
+
+.main-nav a:active {
+    color: cyan;
+}
+
+.main-nav .main-nav__contacto {
+    background-color: chartreuse;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
