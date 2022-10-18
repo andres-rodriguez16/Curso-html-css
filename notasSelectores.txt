@@ -1,0 +1,83 @@
+-----Pseudoclases-------
+
+son como ejemplo los que tienen los dos : .
+algunos de esos son hover, active, :focus
+define el estilo de un estado especial de un elemento.
+
+-----Pseudoelementos----
+
+son los que tiene ::.
+define el estilo de una parte especifica de un elemento. ::after,
+::placeholder
+
+
+  selector
+    p {
+      color : blue;
+   property : property(value) 
+    }
+
+   declaration
+
+-------------Combinadores----------
+--adjacent siblings(hermano adyacente)
+
+h2 + p {
+  color : red; 
+};
+
+el signo mas significa cerca de, aplica estos estilos, en el ejemplo de arriba lo que dice aplica el color rojo a 
+todas la etiquetas p que esten cerca de un h2.
+
+--General sibling(hermano general).
+
+h2 ~ p {
+  color : red;
+};
+
+ un ejemplo de como funciona es cuando todas los p que tengan un hermano general, a todas las etiquetas p se le 
+van aplicar el estilo
+
+---Child(hijo)
+
+div > p {
+  color : red;
+};
+
+<div>
+  <p></p>  <------ se les aplican a estos
+  <article>
+     <p></p> <-------- no se les aplican
+   </article> 
+</div>
+
+ Se les aplican los estilos a todas las etiquetas p que sean hijos directo de un div.
+
+--Descendant(decendiente)
+
+div p {
+  color : red;
+};
+
+ Se les aplican a todos los decendientes del padre.
+
+-----Medidas------
+
+-Realativas: %, em, rem(root em), max-width / max-heigth, min-width / min-heigth,
+vw, vh
+
+--malas practicas : em
+
+-Absoluta: se diferencia porque su tamaño nunca va a cambiar, sin importar el tamaño de la pantalla
+
+ejemplo: px
+
+#Para utilizar rem hay que reniciar los estilos del navegador, y colocar en la etiqueta :
+
+html {
+   font-zize : 62.5%
+} 
+
+ 1 rem equivale a 10 px.
+
+ 

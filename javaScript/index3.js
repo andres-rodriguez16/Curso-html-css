@@ -1,5 +1,8 @@
 
+const persona = {
+  name : "manuel",
+}
 
- ;
-
-console.log(1500 * 0,05)
+Object.freeze(persona)
+persona.name = "luís";
+console.log(persona);
